@@ -14,8 +14,6 @@ const clearMarkup = () => {
     countryInfo.textContent = '';
 };
 
-
-
 inputCountSearch.addEventListener("input", debounce(countSearch, DEBOUNCE_DELAY));
 
 
