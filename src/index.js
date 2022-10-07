@@ -14,14 +14,14 @@ const clearMarkup = () => {
     countryInfo.textContent = '';
 };
 
-let country = '';
+
 
 inputCountSearch.addEventListener("input", debounce(countSearch, DEBOUNCE_DELAY));
 
 
 function countSearch(event) {
     clearMarkup();
-    country = event.target.value.trim().toLowerCase();
+    const country = event.target.value.trim().toLowerCase();
     
     if ((!country && !event.data) || (!country && event.data === '')) {
         return;
